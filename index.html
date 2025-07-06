@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShiraoriJoki | Jasa Joki Genshin Impact & Honkai: Star Rail</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="/assets/images/logo/Logo-4.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="..//genshin-hsr-boosting/assets/images/logo/Logo-4.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="..//genshin-hsr-boosting/assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Tailwind CSS CDN for Flowbite-like classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="dark-mode">
+    <!-- Navigation -->
+    <!-- Di index.html -->
+    <nav
+      class="navbar fixed top-0 left-0 w-full z-50 bg-gray-900 shadow-lg transition-all duration-300"
+    >
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a href="index.html" class="logo flex items-center">
+          <img
+            src="/assets/images/logo/Logo-4.png"
+            alt="Logo ShiraoriJokiPro"
+            class="h-10 mr-2"
+          />
+          <span
+            class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent"
+            >ShiraoriJoki<span class="text-purple-500">Pro</span></span
+          >
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link active">Beranda</a>
+          <a href="services.html" class="nav-link">Layanan</a>
+          <a href="pricing.html" class="nav-link">Harga</a>
+          <a href="portofolio.html" class="nav-link">Portofolio</a>
+          <a href="testimonials.html" class="nav-link">Testimoni</a>
+          <a href="order.html" class="btn-primary px-6 py-2 rounded-lg"
+            >Pesan</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-white focus:outline-none"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden fixed top-0 right-0 h-full w-64 bg-gray-800 shadow-xl transform translate-x-full transition-transform duration-300 ease-in-out z-50"
+      >
+        <div
+          class="flex justify-between items-center p-4 border-b border-gray-700"
+        >
+          <a href="index.html" class="logo flex items-center">
+            <img
+              src="/assets/images/logo/Logo-4.png"
+              alt="Logo ShiraoriJokiPro"
+              class="h-10 mr-2"
+            />
+            <span class="text-xl font-bold text-white"
+              >ShiraoriJoki<span class="text-purple-400">Pro</span></span
+            >
+          </a>
+          <button id="close-mobile-menu" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="p-4 flex flex-col space-y-4">
+          <a href="index.html" class="nav-link-mobile active">Beranda</a>
+          <a href="services.html" class="nav-link-mobile">Layanan</a>
+          <a href="pricing.html" class="nav-link-mobile">Harga</a>
+          <a href="portofolio.html" class="nav-link-mobile">Portofolio</a>
+          <a href="testimonials.html" class="nav-link-mobile">Testimoni</a>
+          <a
+            href="order.html"
+            class="btn-outline px-4 py-2 rounded-lg text-center"
+            >Pesan</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu (Sekarang dengan ID navbar-default) -->
+    <div class="mobile-menu" id="navbar-default">
+      <div class="mobile-menu-header">
+        <a href="index.html" class="logo-mobile">
+          <img
+            src="/assets/images/logo/Logo-4.png"
+            alt="ShiraoriJokiPro Logo"
+          />
+          <span class="logo-text"
+            >ShiraoriJoki<span style="color: var(--accent-purple)"
+              >Pro</span
+            ></span
+          >
+        </a>
+        <button
+          class="hamburger"
+          data-collapse-toggle="navbar-default"
+          type="button"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Close main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <a href="index.html" class="active">Beranda</a>
+      <a href="services.html">Layanan</a>
+      <a href="pricing.html">Harga</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="testimonials.html">Testimoni</a>
+      <a href="order.html" class="btn-outline">Pesan</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Di index.html -->
+      <section
+        class="hero relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden"
+      >
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row items-center">
+            <!-- Hero Content -->
+            <div class="w-full md:w-1/2 mb-12 md:mb-0 md:pr-8">
+              <h1
+                class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+              >
+                <span
+                  class="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent"
+                  >Jasa Joki</span
+                >
+                Profesional
+              </h1>
+              <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-lg">
+                Untuk Genshin Impact & Honkai: Star Rail. Profesional, cepat,
+                dan terpercaya. Fokus farming, Spiral Abyss, Simulated Universe
+                & lainnya!
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="order.html"
+                  class="btn-primary px-8 py-3 rounded-lg text-center font-semibold text-lg"
+                  >Pesan Sekarang</a
+                >
+                <a
+                  href="#services"
+                  class="btn-outline px-8 py-3 rounded-lg text-center font-semibold text-lg"
+                  >Lihat Layanan</a
+                >
+              </div>
+            </div>
+
+            <!-- Hero Image/Slider -->
+            <div class="w-full md:w-1/2 relative">
+              <div
+                class="slider-container relative rounded-xl overflow-hidden shadow-2xl"
+              >
+                <div
+                  class="slider-wrapper flex transition-transform duration-500 ease-in-out"
+                >
+                  <div class="slide min-w-full">
+                    <img
+                      src="assets/images/heroes/genshin-hsr-hero.png"
+                      alt="Genshin and HSR Characters"
+                      class="w-full h-auto object-cover"
+                    />
+                  </div>
+                  <div class="slide min-w-full">
+                    <img
+                      src="assets/images/heroes/genshin-abyss.jpg"
+                      alt="Genshin Spiral Abyss"
+                      class="w-full h-auto object-cover"
+                    />
+                  </div>
+                  <div class="slide min-w-full">
+                    <img
+                      src="assets/images/heroes/hsr-universe.jpg"
+                      alt="HSR Simulated Universe"
+                      class="w-full h-auto object-cover"
+                    />
+                  </div>
+                </div>
+
+                <!-- Slider Navigation -->
+                <div
+                  class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2"
+                >
+                  <button
+                    class="slider-dot w-3 h-3 rounded-full bg-white bg-opacity-30 transition-all duration-300"
+                  ></button>
+                  <button
+                    class="slider-dot w-3 h-3 rounded-full bg-white bg-opacity-30 transition-all duration-300"
+                  ></button>
+                  <button
+                    class="slider-dot w-3 h-3 rounded-full bg-white bg-opacity-30 transition-all duration-300"
+                  ></button>
+                </div>
+
+                <!-- Slider Arrows -->
+                <button class="slider-arrow left-4 hidden md:block">
+                  <svg
+                    class="w-8 h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 19l-7-7 7-7"
+                    ></path>
+                  </svg>
+                </button>
+                <button class="slider-arrow right-4 hidden md:block">
+                  <svg
+                    class="w-8 h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
+          <div
+            class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-900 to-transparent opacity-20"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-gray-900 to-transparent"
+          ></div>
+        </div>
+      </section>
+      <!-- Features Section -->
+      <section class="features">
+        <div class="container">
+          <h2 data-aos="fade-up">Mengapa Memilih Kami?</h2>
+          <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Aman & Terpercaya</h3>
+              <p>
+                Akun Anda aman dengan kami. Tidak menggunakan cheat atau
+                software ilegal.
+              </p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3>Cepat & Efisien</h3>
+              <p>Pengerjaan cepat dengan tim profesional yang berpengalaman.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h3>Support 24/7</h3>
+              <p>
+                Customer service siap membantu kapan saja melalui WhatsApp,
+                Discord, atau Instagram.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Game Services Section -->
+      <section id="services" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Layanan Kami</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+              Pilih game untuk melihat layanan yang tersedia
+            </p>
+          </div>
+
+          <!-- Game Tabs -->
+          <div class="flex justify-center mb-8">
+            <div class="inline-flex rounded-lg bg-gray-800 p-1">
+              <button
+                class="game-tab-btn active px-6 py-2 rounded-md font-medium active"
+                data-tab="genshin"
+              >
+                Genshin Impact
+              </button>
+              <button
+                class="game-tab-btn px-6 py-2 rounded-md font-medium"
+                data-tab="hsr"
+              >
+                Honkai: Star Rail
+              </button>
+            </div>
+          </div>
+
+          <!-- Tab Contents -->
+          <div class="tab-contents">
+            <!-- Genshin Impact Tab -->
+            <div id="genshin-tab" class="tab-content active">
+              <div
+                class="flex flex-col lg:flex-row gap-8 bg-gray-800 rounded-xl overflow-hidden shadow-xl"
+              >
+                <div class="lg:w-1/2">
+                  <img
+                    src="assets/images/heroes/genshin-abyss.jpg"
+                    alt="Genshin Impact Services"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="lg:w-1/2 p-8">
+                  <h3 class="text-2xl font-bold mb-6">
+                    Layanan Genshin Impact
+                  </h3>
+                  <ul class="space-y-3 mb-8">
+                    <li class="flex items-center">
+                      <svg
+                        class="w-5 h-5 text-purple-500 mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <span>Spiral Abyss 36 Stars</span>
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-5 h-5 text-purple-500 mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <span>Eksplorasi Peta 100%</span>
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-5 h-5 text-purple-500 mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <span>Daily Commissions</span>
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-5 h-5 text-purple-500 mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <span>Boss Farming</span>
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-5 h-5 text-purple-500 mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <span>Artifact Farming</span>
+                    </li>
+                  </ul>
+                  <a
+                    href="pricing.html#genshin"
+                    class="btn-primary inline-block px-6 py-3 rounded-lg"
+                    >Lihat Harga</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Honkai: Star Rail Tab -->
+            <div id="hsr-tab" class="tab-content hidden">
+              <div
+                class="flex flex-col lg:flex-row gap-8 bg-gray-800 rounded-xl overflow-hidden shadow-xl"
+              >
+                <div class="lg:w-1/2">
+                  <img
+                    src="assets/images/heroes/hsr-universe.jpg"
+                    alt="Honkai: Star Rail Services"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="lg:w-1/2 p-8">
+                  <h3 class="text-2xl font-bold mb-6">
+                    Layanan Honkai: Star Rail
+                  </h3>
+                  <ul class="space-y-3 mb-8">
+                    <li class="flex items-center">
+                      <svg
+                        class="w-5 h-5 text-purple-500 mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <span>Simulated Universe</span>
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-5 h-5 text-purple-500 mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <span>Relic Farming</span>
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-5 h-5 text-purple-500 mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <span>Trailblaze Mission</span>
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-5 h-5 text-purple-500 mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <span>Weekly Boss</span>
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-5 h-5 text-purple-500 mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                      <span>Forgotten Hall</span>
+                    </li>
+                  </ul>
+                  <a
+                    href="pricing.html#hsr"
+                    class="btn-primary inline-block px-6 py-3 rounded-lg"
+                    >Lihat Harga</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Preview -->
+      <section class="testimonials-preview">
+        <div class="container">
+          <h2 data-aos="fade-up">Apa Kata Pelanggan Kami?</h2>
+          <br />
+          <div class="testimonials-grid">
+            <div class="testimonial-card" data-aos="fade-up">
+              <div class="testimonial-content">
+                <p>
+                  "Joki Spiral Abyss 36 stars cepat banget! Hanya 2 jam sudah
+                  selesai. Recommended!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Rizky</h4>
+                  <span>Pelanggan Genshin Impact</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="testimonial-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="testimonial-content">
+                <p>
+                  "Relic farmingnya dapat yang bagus-bagus. Akun aman dan selalu
+                  dikasih update."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Sarah</h4>
+                  <span>Pelanggan Honkai: Star Rail</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+            <a href="testimonials.html" class="btn-outline"
+              >Lihat Semua Testimoni</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta" id="order">
+        <div class="container" data-aos="fade-up">
+          <h2>Siap Meningkatkan Pengalaman Gaming Anda?</h2>
+          <p>Pesan sekarang dan dapatkan layanan profesional dari tim kami!</p>
+          <a href="order.html" class="btn-primary">Pesan Sekarang</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <img
+            src="/assets/images/logo/Logo-4.png"
+            alt="ShiraoriJokiPro"
+            class="footer-logo"
+          />
+          <div class="footer-col">
+            <h3>ShiraoriJokiPro</h3>
+            <p>
+              Layanan joki profesional untuk Genshin Impact dan Honkai: Star
+              Rail. Aman, cepat, dan terpercaya.
+            </p>
+            <div class="social-links">
+              <a href="https://wa.me/6285890084378" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/_ilham_bustomi_/?hl=id"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://canary.discord.com/channels/@shiraori2045"
+                target="_blank"
+                ><i class="fab fa-discord"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Layanan</h3>
+            <ul>
+              <li><a href="services.html">Genshin Impact</a></li>
+              <li><a href="services.html">Honkai: Star Rail</a></li>
+              <li><a href="pricing.html">Daftar Harga</a></li>
+              <li><a href="portofolio.html">Portofolio</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Perusahaan</h3>
+            <ul>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Syarat & Ketentuan</a></li>
+              <li><a href="testimonials.html">Testimoni</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Kontak</h3>
+            <ul>
+              <li><i class="fas fa-envelope"></i>bustomiilham117@gmail.com</li>
+              <li><i class="fas fa-phone"></i> +62 858 9008 4378</li>
+              <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 ShiraoriJokiPro. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
