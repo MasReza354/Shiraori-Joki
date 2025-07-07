@@ -23,7 +23,7 @@
                 <a href="pricing.html" class="active">Harga</a>
                 <a href="portfolio.html">Portofolio</a>
                 <a href="testimonials.html">Testimoni</a>
-                <a href="order.html" class="btn-outline">Pesan</a>
+                <a href="order.html" class="btn-primary px-6 py-1 rounded-lg">Pesan</a>
             </div>
             <button class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -38,7 +38,7 @@
         <a href="pricing.html" class="active">Harga</a>
         <a href="portfolio.html">Portofolio</a>
         <a href="testimonials.html">Testimoni</a>
-        <a href="order.html" class="btn-outline">Pesan</a>
+        <a href="order.html" class="btn-primary px-6 py-2 rounded-lg">Pesan</a>
     </div>
 
     <!-- Pricing Hero -->
@@ -54,12 +54,14 @@
         <div class="container">
             <div class="tabs-header">
                 <button class="tab-btn active" data-tab="genshin">Genshin Impact</button>
-                <button class="tab-btn " data-tab="hsr">Honkai: Star Rail</button>
+                <button class="tab-btn" data-tab="hsr">Honkai: Star Rail</button>
             </div>
-            
+
+            <!-- Konten untuk Genshin Impact -->
             <div class="tab-content active" id="genshin">
                 <div class="pricing-grid">
-                    <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                        <div class="badge">Populer</div>
                         <div class="pricing-header">
                             <h3>Eksplorasi</h3>
                             <div class="price">Hubungi Atmin<span>/1 Map</span></div>
@@ -72,43 +74,41 @@
                             <li><i class="fas fa-check"></i> Fountain  100%</li>
                             <li><i class="fas fa-check"></i> Natlan  100%</li>
                         </ul>
-                        <a href="order.html?service=ar-leveling&game=genshin" class="btn-primary">Pesan Sekarang</a>
+                        <a href="order.html?service=ar-leveling&game=genshin" class="btn-primary px-5 py-1 rounded-lg">Pesan Sekarang</a>
                     </div>
 
                     <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
-                        <!--<div class="badge">Populer</div> -->
+                        <div class="badge">Populer</div>
+                        <div class="pricing-header">
+                            <h3>Daily Commissions</h3>
+                            <div class="price">Rp5.000<span>/hari</span></div>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> 4 Daily Commissions</li>
+                            <li><i class="fas fa-check"></i> Klaim reward Katheryne</li>
+                            <li><i class="fas fa-check"></i> Resin usage (opsional)</li>
+                            <li><i class="fas fa-check"></i> Screenshot bukti</li>
+                        </ul>
+                        <a href="order.html?service=daily-commissions&game=genshin" class="btn-primary px-5 py-1 rounded-lg">Pesan Sekarang</a>
+                    </div>
+
+                    <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                        <div class="badge">Populer</div>
                         <div class="pricing-header">
                             <h3>Level Up Characters</h3>
                             <div class="price">Rp50.000<span>/Characters</span></div>
                         </div>
                         <ul class="features">
-                            <li><i class="fas fa-check"></i> Lv 20-40</li> 
+                            <li><i class="fas fa-check"></i> Lv 20-40</li>
                             <li><i class="fas fa-check"></i> Lv 40-50</li>
                             <li><i class="fas fa-check"></i> Lv 50-60</li>
                             <li><i class="fas fa-check"></i> Lv 60-70</li>
                             <li><i class="fas fa-check"></i> Lv 70-80</li>
                             <li><i class="fas fa-check"></i> Lv 80-90</li>
                         </ul>
-                        <a href="order.html?service=spiral-abyss&game=genshin" class="btn-primary">Pesan Sekarang</a>
+                        <a href="order.html?service=spiral-abyss&game=genshin" class="btn-primary px-5 py-1 rounded-lg">Pesan Sekarang</a>
                     </div>
 
-                    <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
-                        <!--<div class="badge">Populer</div> -->
-                        <div class="pricing-header">
-                            <h3>All Quest</h3>
-                            <div class="price">Hubungi Atmin<span>/Quest</span></div>
-                        </div>
-                        <ul class="features">
-                            <li><i class="fas fa-check"></i> Side Quest</li> 
-                            <li><i class="fas fa-check"></i> Main Quest</li>
-                            <li><i class="fas fa-check"></i> Archon Quest</li>
-                            <li><i class="fas fa-check"></i> World Quest</li>
-                            <li><i class="fas fa-check"></i> Hangout Quest</li>
-                            <!-- <li><i class="fas fa-check"></i> Characters Quest</li> -->
-                        </ul>
-                        <a href="order.html?service=spiral-abyss&game=genshin" class="btn-primary">Pesan Sekarang</a>
-                    </div>
-                    
                     <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
                         <div class="badge">Populer</div>
                         <div class="pricing-header">
@@ -121,23 +121,25 @@
                             <li><i class="fas fa-check"></i> Karakter sesuai akun Anda</li>
                             <li><i class="fas fa-check"></i> Screenshot bukti</li>
                         </ul>
-                        <a href="order.html?service=spiral-abyss&game=genshin" class="btn-primary">Pesan Sekarang</a>
+                        <a href="order.html?service=spiral-abyss&game=genshin" class="btn-primary px-5 py-1 rounded-lg">Pesan Sekarang</a>
                     </div>
-                    
-                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="pricing-header">
-                            <h3>Daily Commissions</h3>
-                            <div class="price">Rp5.000<span>/hari</span></div>
+                            <h3>All Quest</h3>
+                            <div class="price">Hubungi Atmin<span>/Quest</span></div>
                         </div>
                         <ul class="features">
-                            <li><i class="fas fa-check"></i> 4 Daily Commissions</li>
-                            <li><i class="fas fa-check"></i> Klaim reward Katheryne</li>
-                            <li><i class="fas fa-check"></i> Resin usage (opsional)</li>
-                            <li><i class="fas fa-check"></i> Screenshot bukti</li>
+                            <li><i class="fas fa-check"></i> Side Quest</li>
+                            <li><i class="fas fa-check"></i> Main Quest</li>
+                            <li><i class="fas fa-check"></i> Archon Quest</li>
+                            <li><i class="fas fa-check"></i> World Quest</li>
+                            <li><i class="fas fa-check"></i> Hangout Quest</li>
+                            <!-- <li><i class="fas fa-check"></i> Characters Quest</li> -->
                         </ul>
-                        <a href="order.html?service=daily-commissions&game=genshin" class="btn-primary">Pesan Sekarang</a>
+                        <a href="order.html?service=spiral-abyss&game=genshin" class="btn-primary px-5 py-1 rounded-lg">Pesan Sekarang</a>
                     </div>
-                    
+
                     <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="pricing-header">
                             <h3>Boss Farming</h3>
@@ -149,11 +151,12 @@
                             <li><i class="fas fa-check"></i> Termasuk material collection</li>
                             <li><i class="fas fa-check"></i> Screenshot bukti drop</li>
                         </ul>
-                        <a href="order.html?service=boss-farming&game=genshin" class="btn-primary">Pesan Sekarang</a>
+                        <a href="order.html?service=boss-farming&game=genshin" class="btn-primary px-5 py-1 rounded-lg">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
-            
+
+            <!-- Konten untuk Honkai: Star Rail -->
             <div class="tab-content" id="hsr">
                 <div class="pricing-grid">
                     <div class="pricing-card" data-aos="fade-up">
@@ -167,9 +170,9 @@
                             <li><i class="fas fa-check"></i> Termasuk claim reward</li>
                             <li><i class="fas fa-check"></i> Screenshot bukti</li>
                         </ul>
-                        <a href="order.html?service=simulated-universe&game=hsr" class="btn-primary">Pesan Sekarang</a>
+                        <a href="order.html?service=simulated-universe&game=hsr" class="btn-primary px-5 py-1 rounded-lg">Pesan Sekarang</a>
                     </div>
-                    
+
                     <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
                         <div class="badge">Populer</div>
                         <div class="pricing-header">
@@ -182,9 +185,9 @@
                             <li><i class="fas fa-check"></i> Screenshot hasil drop</li>
                             <li><i class="fas fa-check"></i> Auto-sell relic junk</li>
                         </ul>
-                        <a href="order.html?service=relic-farming&game=hsr" class="btn-primary">Pesan Sekarang</a>
+                        <a href="order.html?service=relic-farming&game=hsr" class="btn-primary px-5 py-1 rounded-lg">Pesan Sekarang</a>
                     </div>
-                    
+
                     <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="pricing-header">
                             <h3>Trailblaze Mission</h3>
@@ -196,9 +199,9 @@
                             <li><i class="fas fa-check"></i> Screenshot bukti</li>
                             <li><i class="fas fa-check"></i> Auto-claim rewards</li>
                         </ul>
-                        <a href="order.html?service=trailblaze-mission&game=hsr" class="btn-primary">Pesan Sekarang</a>
+                        <a href="order.html?service=trailblaze-mission&game=hsr" class="btn-primary px-5 py-1 rounded-lg">Pesan Sekarang</a>
                     </div>
-                    
+
                     <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="pricing-header">
                             <h3>Weekly Boss</h3>
@@ -210,7 +213,7 @@
                             <li><i class="fas fa-check"></i> Screenshot bukti drop</li>
                             <li><i class="fas fa-check"></i> Material tracking</li>
                         </ul>
-                        <a href="order.html?service=weekly-boss&game=hsr" class="btn-primary">Pesan Sekarang</a>
+                        <a href="order.html?service=weekly-boss&game=hsr" class="btn-primary px-5 py-1 rounded-lg">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -223,9 +226,9 @@
             <h2>Tidak Menemukan yang Anda Cari?</h2>
             <p>Hubungi kami untuk layanan custom sesuai kebutuhan Anda!</p>
             <div class="contact-buttons">
-                <a href="https://wa.me/6285890084378" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                <a href="https://www.instagram.com/_ilham_bustomi_/?hl=id" class="btn-instagram"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://canary.discord.com/channels/@shiraori2045" class="btn-discord"><i class="fab fa-discord"></i> Discord</a>
+                <a href="https://wa.me/6285890084378" class="btn-whatsapp px-5 py-1 rounded-lg" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://www.instagram.com/_ilham_bustomi_/?hl=id" class="btn-instagram px-5 py-1 rounded-lg" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://canary.discord.com/channels/@shiraori2045" class="btn-discord px-5 py-1 rounded-lg" target="_blank"><i class="fab fa-discord"></i> Discord</a>
             </div>
         </div>
     </section>
