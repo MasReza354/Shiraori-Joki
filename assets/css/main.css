@@ -585,6 +585,17 @@ a {
   gap: 30px;
 }
 
+.services-grid .service-card {
+  position: relative; /* anchor for absolute child */
+}
+
+.services-grid .service-card .btn-outline {
+  position: absolute;
+  bottom: 20px; /* 20 px from card bottom */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .service-card {
   background-color: var(--card-bg);
   padding: 30px;
@@ -755,8 +766,42 @@ a {
   padding: 80px 0;
 }
 
+/* Pricing Tabs Content */
+.pricing-tabs .tab-content {
+  margin-top: 0;
+  padding-top: 10px; /* keep a small breathing room */
+}
+
+.pricing-tabs .tab-content .pricing-grid {
+  margin-top: 0; /* Removed unnecessary margin-top for tighter content */
+}
+
+/* Prevent excessive padding/margin between elements */
+.pricing-card .pricing-header {
+  padding-bottom: 15px; /* Adjusted padding to avoid excessive space */
+}
+
+.pricing-card ul.features {
+  padding-left: 15px; /* Reduced space inside feature list */
+  margin-top: 0; /* Removed excessive margin at the top */
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.pricing-card .features li {
+  margin-bottom: 6px; /* rapatkan baris fitur */
+}
+
+.pricing-card .btn-primary {
+  margin-top: 0; /* hilangkan margin tambahan */
+}
+
+.pricing-card .price {
+  font-size: 1.75rem; /* Adjusted price size for better layout */
+}
+
 .tabs-header {
-    margin-bottom: 40px; /* Menambahkan jarak bawah pada header tab */
+  margin-bottom: 40px; /* Menambahkan jarak bawah pada header tab */
 }
 
 .pricing-grid {
@@ -766,8 +811,11 @@ a {
 }
 
 .pricing-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background-color: var(--card-bg);
-  padding: 30px;
+  padding: 20px;
   border-radius: var(--border-radius);
   transition: var(--transition);
   position: relative;
@@ -797,8 +845,8 @@ a {
 }
 
 .pricing-header {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -946,10 +994,10 @@ a {
 
 /* Social Links in CTA section */
 .contact-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Menambahkan jarak antar tombol social link */
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Menambahkan jarak antar tombol social link */
+  margin-top: 2rem;
 }
 
 /* Footer */
@@ -1331,4 +1379,3 @@ body > *:not(.stars-bg) {
     order: 1; /* Memastikan gambar ada di bawah */
   }
 }
-
