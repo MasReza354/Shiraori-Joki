@@ -510,23 +510,26 @@ _Silahkan konfirmasi ketersediaan dan detail pembayaran_`;
     });
   }
 
-
   // Pricing Tabs functionality
   const pricingTabBtns = document.querySelectorAll('.pricing-tabs .tab-btn');
-  const pricingTabContents = document.querySelectorAll('.pricing-tabs .tab-content');
+  const pricingTabContents = document.querySelectorAll(
+    '.pricing-tabs .tab-content'
+  );
 
   // Function to activate a tab
   const activatePricingTab = (tabId) => {
     console.log(`[Pricing Tabs] Mencoba mengaktifkan tab: ${tabId}`);
 
     // Hapus kelas 'active' dan sembunyikan semua konten tab
-    pricingTabBtns.forEach(b => {
+    pricingTabBtns.forEach((b) => {
       b.classList.remove('active');
       b.style.backgroundColor = ''; // Hapus styling sementara
-      console.log(`[Pricing Tabs] Tombol dinonaktifkan: ${b.getAttribute('data-tab')}`);
+      console.log(
+        `[Pricing Tabs] Tombol dinonaktifkan: ${b.getAttribute('data-tab')}`
+      );
     });
 
-    pricingTabContents.forEach(content => {
+    pricingTabContents.forEach((content) => {
       content.classList.remove('active');
       content.style.display = 'none'; // Sembunyikan secara eksplisit
       content.style.border = ''; // Hapus styling sementara
@@ -534,13 +537,21 @@ _Silahkan konfirmasi ketersediaan dan detail pembayaran_`;
     });
 
     // Tambahkan kelas 'active' ke tombol yang diklik
-    const clickedButton = document.querySelector(`.pricing-tabs .tab-btn[data-tab="${tabId}"]`);
+    const clickedButton = document.querySelector(
+      `.pricing-tabs .tab-btn[data-tab="${tabId}"]`
+    );
     if (clickedButton) {
       clickedButton.classList.add('active');
       clickedButton.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'; // Indikator visual sementara
-      console.log('[Pricing Tabs] Tombol ditemukan dan diaktifkan:', clickedButton.textContent.trim());
+      console.log(
+        '[Pricing Tabs] Tombol ditemukan dan diaktifkan:',
+        clickedButton.textContent.trim()
+      );
     } else {
-      console.error('[Pricing Tabs] Tombol yang diklik tidak ditemukan untuk data-tab:', tabId);
+      console.error(
+        '[Pricing Tabs] Tombol yang diklik tidak ditemukan untuk data-tab:',
+        tabId
+      );
     }
 
     // Tampilkan konten yang sesuai
@@ -550,11 +561,22 @@ _Silahkan konfirmasi ketersediaan dan detail pembayaran_`;
       activeContent.style.display = 'block'; // Tampilkan secara eksplisit
       activeContent.style.border = '2px solid green'; // Indikator visual sementara
       console.log('[Pricing Tabs] Konten ditemukan dan diaktifkan:', tabId);
-      console.log('[Pricing Tabs] Gaya display konten aktif saat ini:', activeContent.style.display);
+      console.log(
+        '[Pricing Tabs] Gaya display konten aktif saat ini:',
+        activeContent.style.display
+      );
       // Periksa apakah elemen memiliki dimensi (bukan 0x0)
-      console.log('[Pricing Tabs] Apakah activeContent terlihat? offsetWidth:', activeContent.offsetWidth, 'offsetHeight:', activeContent.offsetHeight);
+      console.log(
+        '[Pricing Tabs] Apakah activeContent terlihat? offsetWidth:',
+        activeContent.offsetWidth,
+        'offsetHeight:',
+        activeContent.offsetHeight
+      );
     } else {
-      console.error('[Pricing Tabs] Konten tab tidak ditemukan untuk ID:', tabId); // Log penting
+      console.error(
+        '[Pricing Tabs] Konten tab tidak ditemukan untuk ID:',
+        tabId
+      ); // Log penting
     }
 
     // Refresh animasi AOS untuk konten tab yang baru aktif
@@ -567,8 +589,8 @@ _Silahkan konfirmasi ketersediaan dan detail pembayaran_`;
     }, 50); // Penundaan 50ms
   };
 
-  pricingTabBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
+  pricingTabBtns.forEach((btn) => {
+    btn.addEventListener('click', function () {
       const tabId = this.getAttribute('data-tab');
       console.log('[Pricing Tabs] Tombol tab diklik, data-tab:', tabId);
       activatePricingTab(tabId);
@@ -576,20 +598,30 @@ _Silahkan konfirmasi ketersediaan dan detail pembayaran_`;
   });
 
   // Atur tab aktif awal saat halaman dimuat untuk harga
-  const initialPricingTab = document.querySelector('.pricing-tabs .tab-btn.active');
+  const initialPricingTab = document.querySelector(
+    '.pricing-tabs .tab-btn.active'
+  );
   if (initialPricingTab) {
-    const initialPricingTabContentId = initialPricingTab.getAttribute('data-tab');
-    console.log('[Pricing Tabs] Tab aktif awal ditemukan:', initialPricingTabContentId);
+    const initialPricingTabContentId =
+      initialPricingTab.getAttribute('data-tab');
+    console.log(
+      '[Pricing Tabs] Tab aktif awal ditemukan:',
+      initialPricingTabContentId
+    );
     activatePricingTab(initialPricingTabContentId);
   } else {
     // Fallback: jika tidak ada tab aktif yang diatur di HTML, default ke yang pertama
     if (pricingTabBtns.length > 0 && pricingTabContents.length > 0) {
       const defaultTabId = pricingTabBtns[0].getAttribute('data-tab');
-      console.log('[Pricing Tabs] Tidak ada tab aktif awal yang ditemukan di HTML, mengaktifkan tab pertama:', defaultTabId);
+      console.log(
+        '[Pricing Tabs] Tidak ada tab aktif awal yang ditemukan di HTML, mengaktifkan tab pertama:',
+        defaultTabId
+      );
       activatePricingTab(defaultTabId);
     } else {
-      console.warn('[Pricing Tabs] Tidak ada tombol tab atau konten tab ditemukan untuk inisialisasi.');
+      console.warn(
+        '[Pricing Tabs] Tidak ada tombol tab atau konten tab ditemukan untuk inisialisasi.'
+      );
     }
   }
-
 });
